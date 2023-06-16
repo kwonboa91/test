@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+        <h1>Gia hoa qua</h1>
+        <input type="text" id="name">
+        <button onclick="checkGia()">xem gia</button>
+        <p id="result">0</p>
+    
+    <script>
+
+        function checkGia() {
+            let a = document.getElementById("name").value;
+            let result;
+            switch (a) {
+                case "Ổi":
+                    result = "20000 VNĐ/kg";
+                    break;
+                case "Dưa Hấu":
+                    result = "20000 VNĐ/kg";
+                    break;
+                case "Táo":
+                    result = "30000 VNĐ/kg";
+                    break;
+                case "Xoài":
+                    result = "30000 VNĐ/kg";
+                    break;
+                case "Cam":
+                    result = "40000 VNĐ/kg";
+                    break;
+                case "Chôm Chôm":
+                    result = "40000 VNĐ/kg";
+                    break;
+                case "Măng Cụt":
+                    result = "50000 VNĐ/kg";
+                    break;
+            }
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+</body>
+
+</html>
